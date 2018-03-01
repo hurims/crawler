@@ -1,0 +1,30 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+  "build_systems":
+  [
+    {
+      "name": "dev_appserver.py",
+      "cmd": ["/Users/hurims/projects/google-cloud-sdk/bin/dev_appserver.py . --custom_entrypoint='node server.js' "],
+      "working_dir": "${project_path}",
+      "variants": [],
+      "shell": true,
+    },
+    {
+      "name": "yarn init",
+      "cmd": ["/Users/hurims/.nvm/versions/node/v9.3.0/bin/yarn"],
+      "working_dir": "${project_path}",
+      "variants": [],
+    },
+    {
+      "name": "gcloud app deploy",
+      "cmd": ["/Users/hurims/projects/google-cloud-sdk/bin/gcloud", "app", "deploy", "--quiet"],
+      "working_dir": "${project_path}",
+      "variants": [],
+    },    
+  ],  
+}

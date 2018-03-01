@@ -1,0 +1,6 @@
+cron:
+- description: daily summary job
+  url: /crawl
+  target: beta
+  schedule: every day 03:00
+  timezone: Asia/Seoul

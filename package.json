@@ -1,0 +1,15 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start2": "node mbc.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
